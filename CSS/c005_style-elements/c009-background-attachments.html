@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <style>
-       body{
-           height: 2000px;
-       }
-       .container{
-           width: 600px;
-           height: 200px;
-           background-image: url(http://s3-us-west-2.amazonaws.com/images.eviesays.com/event/6819078/8709186_0_detail.jpg);
-           background-repeat: no-repeat;
-           border: double;
-           
-           overflow: auto;
-       }
-       .item{
-           height: 400px;
-       }
-       #scroll{
-           background-attachment: scroll;
-       }
-       #local{
-           background-attachment: local;
-       }
-       #fixed{
-           background-attachment: fixed;
-           background-position: left;
-       }
+    <style>
+        body {
+            height: 2000px;
+        }
+        
+        .container {
+            width: 600px;
+            height: 200px;
+            background-image: url(http://s3-us-west-2.amazonaws.com/images.eviesays.com/event/6819078/8709186_0_detail.jpg);
+            background-repeat: no-repeat;
+            border: double;
+            overflow: auto;
+        }
+        
+        .item {
+            height: 400px;
+        }
+        
+        #scroll {
+            background-attachment: scroll;
+        }
+        
+        #local {
+            background-attachment: local;
+        }
+        
+        #fixed {
+            background-attachment: fixed;
+            background-position: left;
+        }
     </style>
 </head>
+
 <body>
-    
+
     <h3>Scroll: Background-image scrolls with the container</h3>
     <div class="container" id='scroll'>
         <div class="item"></div>
     </div>
-    
-      <h3>Local: Background-image scrolls within the container</h3>
+
+    <h3>Local: Background-image scrolls within the container</h3>
     <div class="container" id='local'>
         <div class="item"></div>
     </div>
-    
-      <h3>Fixed: Background-image position is fixed, relative to the view port, and doesn't scroll with the page nor the container</h3>
+
+    <h3>Fixed: Background-image position is fixed, relative to the view port, and doesn't scroll with the page nor the container</h3>
     <div class="container" id='fixed'>
         <div class="item"></div>
     </div>

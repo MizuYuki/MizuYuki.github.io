@@ -3,44 +3,48 @@
 <head>
 
 </head>
-    <style>
-        div{
-            border: solid; 
-            display: block;
-        }
-        #inline{
-            display: inline;
-            font-size: 2em;
-        }
-        #inline-block{
-            display: inline-block;
-            width: 50px;
-            height: 20px;
-        }
-        #none{
-            display: none;
-            
-        }
-        #notvisible{
-            visibility: hidden;
-            height: 50px;
-        }
-    </style>
-<body>
+<style>
+    div {
+        border: solid;
+        display: block;
+    }
     
+    #inline {
+        display: inline;
+        font-size: 2em;
+    }
+    
+    #inline-block {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+    }
+    
+    #none {
+        display: none;
+    }
+    
+    #notvisible {
+        visibility: hidden;
+        height: 50px;
+    }
+</style>
+
+<body>
+
     <h1>Block: no height</h1>
     <div></div>
-    
+
     <h1>Inline: no width, and can't set width and/or height</h1>
     <div id="inline"></div>
 
     <h1>Inline block: no width, no height but, they can be set</h1>
     <div id="inline-block"></div>
-    
+
     <h1>Not rendered</h1>
     <div id="none"></div>
     <p>some text</p>
-    
+
     <h1>Not visible</h1>
     <div id="notvisible"></div>
     <p>some text</p>
