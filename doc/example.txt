@@ -1,1 +1,0 @@
-IFrame is good for hold a document.

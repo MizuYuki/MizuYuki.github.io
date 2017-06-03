@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #back {
+            width: 400px;
+            height: 400px;
+            background-color: lime;
+        }
+        
+        #face {
+            width: 375px;
+            height: 375px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 211px;
+            background-color: yellow
+        }
+        
+        #eye1 {
+            width: 105px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 78px;
+            left: 59px;
+        }
+        
+        #eye2 {
+            width: 105px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 78px;
+            right: 63px;
+        }
+        
+        #pupil {
+            width: 60px;
+            height: 71px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 7px;
+        }
+        
+        #mouth {
+            position: absolute;
+            bottom: 63px;
+            left: 89px;
+            width: 177px;
+            height: 61px;
+            border: solid 13px;
+            border-top: yellow;
+            border-bottom-left-radius: 110px 81px;
+            border-bottom-right-radius: 110px 88px;
+        }
+        
+        #corner1 {
+            border: solid black 4px;
+            height: 6px;
+            width: 28px;
+            background-color: black;
+            border-radius: 50px;
+            transform: rotate(688deg);
+            position: absolute;
+            bottom: 126px;
+            left: 72px;
+        }
+        
+        #corner2 {
+            border: solid black 4px;
+            height: 6px;
+            width: 28px;
+            background-color: black;
+            border-radius: 50px;
+            transform: rotate(-146deg);
+            position: absolute;
+            bottom: 127px;
+            right: 72px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <div id="face">
+            <div id="eye1">
+                <div id="pupil"></div>
+            </div>
+            <div id="eye2">
+                <div id="pupil"></div>
+            </div>
+            <div id="mouth"></div>
+            <div id="corner1"></div>
+            <div id="corner2"></div>
+        </div>
+    </div>
+</body>
+</html>

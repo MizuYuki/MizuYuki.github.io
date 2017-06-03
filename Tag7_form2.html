@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+    <style>
+        input {
+            width: 120px;
+        }
+        
+        input#uploadfile {
+            width: 300px;
+        }
+        
+        #radiogroup input{
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter your name">
+
+        <br>
+        <input type="password" placeholder="Enter password">
+
+        <br>
+        <input type="hidden" value="you can't see me">
+
+        <br>
+        <input type="number" min="1" max="100">
+
+        <br>
+        <input type="email">
+
+        <br>
+        <input type="url">
+
+        <br>
+        <input type="tel">
+
+        <br>
+        <input type="color">
+
+        <br>
+        <input type="range" min="1" max="10" value="1" oninput="updateRange(this.value)">
+        <label id="num_people" for="">1</label>
+
+        <br>
+        <input id="uploadfile" type="file">
+
+
+        <br>
+        <input type="checkbox">
+
+        <br>
+        <div id="radiogroup">
+            <input type="radio">Hi
+            <input type="radio">Hello
+        </div>
+
+
+        <br>
+        <input type="date">
+
+        <br>
+        <input type="time">
+
+        <br>
+        <input type="week">
+
+        <br>
+        <input type="search">
+        
+        <br>
+        <input type="month">
+        
+        <br>
+        <input type="datetime-local">
+
+        <br>
+        <input type="submit">
+    </form>
+    <script>
+        function updateRange(val) {
+            var show_num = document.getElementById('num_people');
+            num_people.innerHTML = val;
+        }
+    </script>
+</body>
+</html>

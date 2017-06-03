@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <style>
+        img {
+            width: 15%
+        }
+        #client_info label{
+            display: inline-block;
+            width: 97px
+        }
+        #client_info input{
+            display:inline-block;
+            width: 150px;
+        }
+        #client_info select{
+            width: 155px
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Order Form</h2>
+    <form action="">
+        <fieldset id="client_info">
+            <legend>Customer Information</legend>
+            <select name="" id="">
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+    </select>
+            <br><br>
+            <label for="Firstname">First Name:</label>
+            <input id="Firstname" type="text"> &nbsp;
+            <label for="Lastname">Last Name:</label>
+            <input id="Lastname" type="text">
+
+            <br><br>
+            <label for="address">Address:</label>
+            <input id="address"type="text"> &nbsp;
+            <label for="address2">Address 2:</label>
+            <input id="address2"type="text">
+            <br><br>
+            <label id="city" for="City">City:</label>
+            <select name="" id="city">
+             <option value="select">Select a City</option>
+              <option value="London">London</option>
+              <option value="Strathroy">Strathroy</option>
+              <option value="Stratford">Stratford</option>
+              <option value="Waterloo">Waterloo</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Wooodstock">Woodstock</option>
+              <option value="St.Thomas">St.Thomas</option>
+            </select> &nbsp;
+            
+            <label for="Zipcoode">Zip Code:</label>
+            <input id="Zipcode" type="text">
+
+            <br><br><hr><br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email">
+
+            &nbsp;
+            <label for="Phone#">Phone:</label>
+            <input id="phone#" type="password"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Order Information</legend>
+            <input type="checkbox" name="Food" value="burger">
+            <img src="img/burger.jpg" alt="burger"> 
+            <input type="checkbox" name="Food" value="hotdog">
+            <img src="img/hotdog.jpg" alt="hotdog">
+            <input type="checkbox" name="Food" value="pizza">
+            <img src="img/pizza.jpg" alt="pizza">
+            <input type="checkbox" name="Food" value="soup">
+            <img src="img/soup.jpg" alt="soup">
+            
+            <br><br>
+            Allergies:
+            <br>
+            <input type="radio">Gluten Free &nbsp;
+            <input type="radio">Peanut Allergy &nbsp;
+            <input type="radio">Lactose intolerance&nbsp;
+
+            <br><br>
+           <label for="range">Number of People:</label>
+            <input type="range" min="1" max="10" value="1" oninput="updateRange(this.value)">
+        <label id="num_people" for="">1</label>
+
+            <br><br> Special Treatments:
+            <br>
+            <textarea name=" " id="" cols="30" rows="7" placeholder="Request treatments here."></textarea>
+            <br><br>
+            Order Type:
+            <div id="radiogroup">
+            <input type="radio" name="Order Type">Delivery
+            <input type="radio" name="Order Type">Pick Up
+            </div>
+            <br>
+            <label for="Date">Date:</label>
+            <input type="date" name="year_week">
+            &nbsp;
+            <label for="Time">Time:</label>
+            <input type="time" name="usr_time">
+
+            <br><br> Payment Type:
+            <br>
+            <div id="d=radiogroup">
+            <input type="radio" name="CardType" value="Creditcard" checked> Credit Card
+
+            <input type="radio" name="CardType" value="DebitCard"> Debit Card
+
+            <input type="radio" name="CardType" value="Paypal"> Paypal
+
+            <input type="radio" name="CardType" value="Mastercard">Mastercard
+            </div>
+            
+        </fieldset>
+        <br>
+         Comments:
+
+        <br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Leave a Comment here."></textarea>
+        <br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+    <script>
+        function updateRange(val) {
+            var show_num = document.getElementById('num_people');
+            num_people.innerHTML = val;
+        }
+    </script>
+
+
+</body>
+
+</html>
